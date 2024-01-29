@@ -12,6 +12,7 @@
             box-sizing: border-box;
             background-color: #f8f0e3;
             color: #5c5151;
+            overflow: hidden; /* Hide overflowing hearts */
         }
 
         header {
@@ -22,16 +23,18 @@
         }
 
         .container {
+            position: relative;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            text-align: center;
         }
 
         .content {
             max-width: 600px;
+            margin-bottom: 2em;
+            text-align: center;
         }
 
         h1 {
@@ -45,50 +48,26 @@
         }
 
         .heart {
-            color: #e24e42;
-            font-size: 2em;
-            animation: heartbeat 1.5s infinite;
-        }
-
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .image-container {
-            margin-top: 2em;
-            position: relative;
-        }
-
-        .image-overlay {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(226, 78, 66, 0.5);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.5s;
+            transform: translate(-50%, -50%);
+            color: #e24e42;
+            font-size: 2em;
+            animation: loveAnimation 10s infinite linear;
+            pointer-events: none; /* Prevent hearts from interfering with mouse events */
         }
 
-        .image-container:hover .image-overlay {
-            opacity: 1;
-        }
-
-        .overlay-content {
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        @keyframes loveAnimation {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -100,19 +79,12 @@
     <div class="container">
         <div class="content">
             <p>Once upon a time, in a world filled with love, [Your Name] and [Partner's Name] met...</p>
-            <p>Every moment spent together is like a heartbeat, a rhythm of love that lasts forever <span class="heart">❤️</span></p>
+            <p>Every moment spent together is like a heartbeat, a rhythm of love that lasts forever</p>
         </div>
-
-        <div class="image-container">
-            <img src="your-image.jpg" alt="Your Image">
-            <div class="image-overlay">
-                <div class="overlay-content">
-                    <h2>Celebrating Our Love</h2>
-                    <p>Memories that will last a lifetime...</p>
-                </div>
-            </div>
-        </div>
+        <!-- Add more hearts if needed -->
+        <span class="heart" style="top: 10%; left: 20%;">❤️</span>
+        <span class="heart" style="top: 50%; left: 70%;">❤️</span>
+        <span class="heart" style="top: 80%; left: 40%;">❤️</span>
     </div>
 </body>
-    </html>
-    
+</html>
