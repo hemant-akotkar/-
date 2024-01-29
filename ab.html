@@ -3,49 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Love Story</title>
+    <title>Impress Your Girlfriend</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            overflow: hidden;
+            background-color: #ffecf2; /* Light pink background */
+            color: #4a4a4a;
         }
 
         header {
-            background-color: #e24e42;
+            background-color: #e24e42; /* Reddish-pink header */
             color: #fff;
             text-align: center;
             padding: 2em;
         }
 
-        .particles-js-canvas-el {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-        }
-
         .container {
-            position: relative;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 1;
+            height: 100vh;
+            text-align: center;
         }
 
         .content {
             max-width: 600px;
-            margin-bottom: 2em;
-            text-align: center;
-            z-index: 2;
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 0.5em;
+            color: #e24e42; /* Reddish-pink text */
         }
 
         p {
@@ -54,154 +46,58 @@
         }
 
         .heart {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(-50%, -50%);
-            color: #e24e42;
+            color: #e24e42; /* Reddish-pink heart */
             font-size: 2em;
-            animation: loveAnimation 10s infinite linear;
-            pointer-events: none;
+            animation: heartbeat 1.5s infinite;
         }
 
-        @keyframes loveAnimation {
+        @keyframes heartbeat {
             0% {
-                transform: translate(-50%, -50%) rotate(0deg);
+                transform: scale(1);
             }
             50% {
-                transform: translate(-50%, -50%) rotate(180deg);
+                transform: scale(1.1);
             }
             100% {
-                transform: translate(-50%, -50%) rotate(360deg);
+                transform: scale(1);
             }
+        }
+
+        .love-message {
+            font-size: 1.5em;
+            color: #e24e42; /* Reddish-pink text */
+            margin-top: 1em;
+            font-style: italic;
+        }
+
+        .romantic-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .romantic-image:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Our Love Story</h1>
+        <h1>For My Special Someone</h1>
     </header>
-
-    <div id="particles-js" class="particles-js-canvas-el"></div>
 
     <div class="container">
         <div class="content">
-            <p>Once upon a time, in a world filled with love, [Your Name] and [Partner's Name] met...</p>
-            <p>Every moment spent together is like a heartbeat, a rhythm of love that lasts forever</p>
+            <p>Dear [Girlfriend's Name],</p>
+            <p>You are the heartbeat of my life, and every moment with you is special <span class="heart">❤️</span></p>
+            <p class="love-message">You mean the world to me, and I cherish every moment we spend together.</p>
+            <img class="romantic-image" src="your-image.jpg" alt="Your Romantic Image">
+            <p class="love-message">With all my love,
+                <br>[Your Name]</p>
         </div>
-        <!-- Add more hearts if needed -->
-        <span class="heart" style="top: 10%; left: 20%;">❤️</span>
-        <span class="heart" style="top: 50%; left: 70%;">❤️</span>
-        <span class="heart" style="top: 80%; left: 40%;">❤️</span>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS('particles-js', {
-            particles: {
-                number: {
-                    value: 80,
-                    density: {
-                        enable: true,
-                        value_area: 800
-                    }
-                },
-                color: {
-                    value: '#e24e42'
-                },
-                shape: {
-                    type: 'circle',
-                    stroke: {
-                        width: 0,
-                        color: '#000000'
-                    },
-                    polygon: {
-                        nb_sides: 5
-                    },
-                },
-                opacity: {
-                    value: 0.5,
-                    random: false,
-                    anim: {
-                        enable: false,
-                        speed: 1,
-                        opacity_min: 0.1,
-                        sync: false
-                    }
-                },
-                size: {
-                    value: 4,
-                    random: true,
-                    anim: {
-                        enable: false,
-                        speed: 40,
-                        size_min: 0.1,
-                        sync: false
-                    }
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: '#e24e42',
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 6,
-                    direction: 'none',
-                    random: false,
-                    straight: false,
-                    out_mode: 'out',
-                    bounce: false,
-                    attract: {
-                        enable: false,
-                        rotateX: 600,
-                        rotateY: 1200
-                    }
-                }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: {
-                    onhover: {
-                        enable: true,
-                        mode: 'repulse'
-                    },
-                    onclick: {
-                        enable: true,
-                        mode: 'push'
-                    },
-                    resize: true
-                },
-                modes: {
-                    grab: {
-                        distance: 400,
-                        line_linked: {
-                            opacity: 1
-                        }
-                    },
-                    bubble: {
-                        distance: 400,
-                        size: 40,
-                        duration: 2,
-                        opacity: 8,
-                        speed: 3
-                    },
-                    repulse: {
-                        distance: 200,
-                        duration: 0.4
-                    },
-                    push: {
-                        particles_nb: 4
-                    },
-                    remove: {
-                        particles_nb: 2
-                    }
-                }
-            },
-            retina_detect: true
-        });
-    </script>
 </body>
 </html>
