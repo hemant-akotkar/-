@@ -3,101 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impress Your Girlfriend</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #ffecf2; /* Light pink background */
-            color: #4a4a4a;
-        }
-
-        header {
-            background-color: #e24e42; /* Reddish-pink header */
-            color: #fff;
-            text-align: center;
-            padding: 2em;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        .content {
-            max-width: 600px;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            color: #e24e42; /* Reddish-pink text */
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        .heart {
-            color: #e24e42; /* Reddish-pink heart */
-            font-size: 2em;
-            animation: heartbeat 1.5s infinite;
-        }
-
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .love-message {
-            font-size: 1.5em;
-            color: #e24e42; /* Reddish-pink text */
-            margin-top: 1em;
-            font-style: italic;
-        }
-
-        .romantic-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 2em;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .romantic-image:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <link rel="stylesheet" href="sstyles.css">
+    <title>Our Love Story</title>
 </head>
 <body>
     <header>
-        <h1>For My Special Someone</h1>
+        <h1>Our Love Story</h1>
     </header>
-
-    <div class="container">
-        <div class="content">
-            <p>Dear [Girlfriend's Name],</p>
-            <p>You are the heartbeat of my life, and every moment with you is special <span class="heart">❤️</span></p>
-            <p class="love-message">You mean the world to me, and I cherish every moment we spend together.</p>
-            <img class="romantic-image" src="your-image.jpg" alt="Your Romantic Image">
-            <p class="love-message">With all my love,
-                <br>[Your Name]</p>
-        </div>
-    </div>
+    <section class="love-section">
+        <div class="heart"></div>
+        <p>From the moment we met, our love has been an incredible journey...</p>
+    </section>
+    <section class="image-section">
+        <img src="couple.jpg" alt="Couple Image">
+    </section>
+    <section class="quote-section">
+        <blockquote>
+            "Love is not just looking at each other, it's looking in the same direction." - Antoine de Saint-Exupéry
+        </blockquote>
+    </section>
 </body>
 </html>
