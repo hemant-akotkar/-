@@ -1,26 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Our Love Story</title>
+    <title>Rose Day Surprise</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff77aa;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff77aa;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffedcc;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .photo {
+            width: 30%;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+
+        .love-letter {
+            text-align: center;
+            margin-top: 20px;
+            padding: 30px;
+            background-color: #ffedcc;
+        }
+
+        .rose-garden {
+            text-align: center;
+            margin-top: 20px;
+            padding: 30px;
+            background-color: #ffedcc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Our Love Story</h1>
+        <h1>Rose Day Surprise</h1>
     </header>
-    <section class="love-section">
-        <div class="heart"></div>
-        <p>From the moment we met, our love has been an incredible journey...</p>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Photo Gallery</a>
+        <a href="#letter">Love Letter</a>
+        <a href="#garden">Rose Garden</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="hero">
+        <h2>Welcome to Our Love Story</h2>
+        <p>Your personalized message about your relationship.</p>
     </section>
-    <section class="image-section">
-        <img src="couple.jpg" alt="Couple Image">
+
+    <section id="gallery">
+        <h2>Memorable Moments</h2>
+        <div class="gallery">
+            <!-- Add your photos with captions here -->
+        </div>
     </section>
-    <section class="quote-section">
-        <blockquote>
-            "Love is not just looking at each other, it's looking in the same direction." - Antoine de Saint-Exupéry
-        </blockquote>
+
+    <section id="letter" class="love-letter">
+        <h2>My Love Letter to You</h2>
+        <p>Your heartfelt message to your girlfriend.</p>
     </section>
+
+    <section id="garden" class="rose-garden">
+        <h2>Virtual Rose Garden</h2>
+        <p>Interactive feature where she can pick virtual roses.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
 </body>
-</html>
+
+    </html>
+    
