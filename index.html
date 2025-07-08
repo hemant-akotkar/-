@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemantkumar Akotkar - Portfolio Website</title>
+  <!-- In <head> -->
+  	<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<!-- In each skill card -->
+<div data-aos="fade-up" data-aos-delay="100">...</div>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar active" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Sanskar Singh" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sanskar Singh">Hemantkumar Akotkar</h1>
+
+          <p class="title">Pursuing MBA</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="hemantakotkar1234@gmail.com" class="contact-link">hemantakotkar1234@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917499249648" class="contact-link">+91 7499249648</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-11-16">16 November, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Akola, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hemantkumar-akotkar" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.instagram.com/hemant_akotkar_" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://github.com/hemant-akotkar" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://wa.me/917499249648" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+         
+        
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+       
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello,
+      My name is Hemantkumar Vijay Akotkar. I am from Panaj, a Village Of akola disctrict. I am Pursuing my MBA degree from SGBAU University. And I have completed my bachelor's degree  from SGBAU university. I belong to a family of 5 members. My hobbies are playing Cricket and chess. 
+          </p>
+
+          <p>
+            My strengths are l am hard working and self-motivating person. I am quick learner. My short term goal is to get job in reputed company and long term goal is to achieve good position like yours where l can build my career and help the organization too. That's all about me.Thank you very much.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SMM</h4>
+
+                <p class="service-item-text">
+                  Help to Business to handle there social media Page's and generate more engagement for the business.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Simple Web development</h4>
+
+                <p class="service-item-text">
+                  Able to create the Normal type of website for business and others.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Meta Ads</h4>
+
+                <p class="service-item-text">
+                  Help to Generate More lead from Social Media by Launching Ads on the social media like.. FB and Insta.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                   Helping the Business for convert the Complex Data into Simple Visualization to understand Business Growth and development.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MBA</h4>
+
+              <span>PURSUING</span>
+
+              <p class="timeline-text">
+                SGBAU UNIVERSITY <br>
+                P. R. Pote College Of Engineering And Management, Amravati 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.COM</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                SGBAU UNIVERSITY <br>
+                Shri Shivaji Art, Commerce And Science College, Akot 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HSC</h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                MAHARASTRA BOARD <br>
+                Smt. Laxmibai Gangane High School & Jr. College, Akot.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SSC</h4>
+
+              <span>2016 — 2019</span>
+
+              <p class="timeline-text">
+                MAHARASTRA BOARD<br>
+                Shri Shivaji High School & Jr. College, Akot
+              </p>
+
+            </li>
+            
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Customer Handling and Marketing Intern</h4>
+
+              <span>Jun 2025 — Aug 2025</span>
+
+              <p class="timeline-text">
+                I worked at Hero MotoCorp, where I focused on consumer behavior, digital marketing, and customer handling. My responsibilities included sending bulk messages to customers and assisting them by resolving their queries and concerns.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Social Media Management Intern</h4>
+
+              <span>Jun 2025 — Sep 2025</span>
+
+              <p class="timeline-text">
+                I worked as a part-time intern at MJ Marketing Consultancy, where I was responsible for creating social media posters and videos for clients. My role also involved analyzing content calendars and ensuring the alignment of marketing strategies with client objectives. This experience helped me develop skills in content creation, digital marketing, and client engagement.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        
+                <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Courses Completed</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Courseera</h4>
+              
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Foundations of Digital Marketing and E-commerce.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Courseera </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                     Data Analysis and Visualization with Power BI.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>NPTEL</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Consumer Behaviour
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            
+             <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>NPTEL</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Leadership and Team Effectiveness
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+                <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-text" data-modal-text>Daniel lewis</h4>
+              
+              
+              <div class="modal-new-img" data-modal-new-img></div>              
+
+
+            </div>
+
+          </section>
+            </div>
+        
+
+        <!--
+          - Skill
+        -->
+
+          <section class="bg-transparent text-white py-4 px-1 skill">
+
+               <h3 class="h3 skills-title">My skills</h3>
+                <div class="text-center mb-8">
+                  <p class="text-gray-400 text-sm">Areas of expertise and strengths</p>
+               </div>
+
+              <div class="grid grid-cols-2 gap-x-3 gap-y-3 justify-center">
+    <!-- Skill Card -->
+              <div class="w-[170px] bg-white/10 backdrop-blur-md border border-white/20 
+        p-3 rounded-lg text-center shadow-md hover:scale-105 transition duration-300">
+              <div class="text-2xl mb-1">🧠</div>
+                <h3 class="text-sm font-medium">Quick Learner</h3>
+             </div>
+
+             <div class="w-[170px] bg-white/10 backdrop-blur-md border border-white/20 
+        p-3 rounded-lg text-center shadow-md hover:scale-105 transition duration-300">
+             <div class="text-2xl mb-1">🎨</div>
+                <h3 class="text-sm font-medium">Graphic Design</h3>
+             </div>
+
+             <div class="w-[170px] bg-white/10 backdrop-blur-md border border-white/20 
+        p-3 rounded-lg text-center shadow-md hover:scale-105 transition duration-300">
+            <div class="text-2xl mb-1">📣</div>
+               <h3 class="text-sm font-medium">Digital Marketing</h3>
+            </div>
+
+            <div class="w-[170px] bg-white/10 backdrop-blur-md border border-white/20 
+        p-3 rounded-lg text-center shadow-md hover:scale-105 transition duration-300">
+           <div class="text-2xl mb-1">🧩</div>
+              <h3 class="text-sm font-medium">Leadership</h3>
+           </div>
+
+           <div class="w-[170px] bg-white/10 backdrop-blur-md border border-white/20 
+        p-3 rounded-lg text-center shadow-md hover:scale-105 transition duration-300">
+          <div class="text-2xl mb-1">✂️</div>
+             <h3 class="text-sm font-medium">Video Editing</h3>
+          </div>
+
+          <div class="w-[170px] bg-white/10 backdrop-blur-md border border-white/20 
+        p-3 rounded-lg text-center shadow-md hover:scale-105 transition duration-300">
+          <div class="text-2xl mb-1">📊</div>
+              <h3 class="text-sm font-medium">Power BI</h3>
+          </div>
+      </div>
+          
+          </section>
+       
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Power BI</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Social Media Management</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Power BI</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Social Media Management</button>
+              </li>
+             
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="power bi">
+              <a href="https://github.com/hemant-akotkar/PowerBI-project1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_1.jpg" alt="powerbi" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Data Analysis and Data Visualization</h3>
+
+                <p class="project-category">Power BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="social media management">
+              <a href="https://drive.google.com/drive/folders/1H3xve-05909NWa1b1koZJ0y-kVl8db3q">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_2.jpg" alt="Social Media Management" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Created Posters And Videos For Client Aakashganga</h3>
+
+                <p class="project-category">Social Media Management</p>
+
+              </a>
+            </li>
+         
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/hemantakotkar1234@gmail.com" method="POST" class="form" data-form>
+          <input type="hidden" name="_captcha" value="false">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+</body>
+
+</html>
